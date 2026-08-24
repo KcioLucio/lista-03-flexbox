@@ -9,9 +9,7 @@ export default function HomeScreen() {
         <Image
           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpfepoWeeSqlCipbauav_SkItuIk-fW0yBfqAtV51hAw&s=10"}}style={styles.logoTopo}
         />     
-      </View>
-
-      
+      </View>   
 
       
       <View style={styles.loginConteudo}>
@@ -39,19 +37,19 @@ export default function HomeScreen() {
 
 
         <View style={styles.linhaEsqueciSenha}>
-          <Pressable>
+          <Pressable onPress={() => console.log("Esqueceu a Senha")} style={styles.linhaEsqueciSenha}>
             <Text style={styles.textoEsqueciSenha}>
               Esqueci a senha
             </Text>
           </Pressable>
         </View>
 
-
-        <Pressable style={styles.botao}>
-          <Text style={styles.textoBotao}>
-            Entrar
-          </Text>
-        </Pressable>
+        
+          <Pressable onPress={() => console.log("Entrar")} style={styles.botao}>
+            <Text style={styles.textoBotao}>
+              Entrar
+            </Text>
+          </Pressable>        
       </View>
 
 
@@ -59,9 +57,11 @@ export default function HomeScreen() {
         <Text style={styles.textoFooter}>
           É novo por aqui?
         </Text>
-        <Text style={styles.textoFooterCad}>
-          Cadastre-se!
-        </Text>
+        <Pressable onPress={() => console.log("Cadastrar")}>
+          <Text style={styles.textoFooterCad}>
+            Cadastre-se!
+          </Text>
+        </Pressable>
       </View>
     </View>
  );
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     width: 200, 
     height: 100, 
     borderRadius:20,
-    boxShadow: '0px 2px 5px rgb(0,0,0, 5)',
+    boxShadow: '3px 4px 4px rgb(0,0,0, 0.5)',
     
   },
 
@@ -138,7 +138,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 8,
-    boxShadow: '2px 2px 5px rgb(0,0,0, 5)' ,
+    boxShadow: '3px 4px 4px rgb(0,0,0, 0.5)' ,
   },
 
   textoBotao: {
