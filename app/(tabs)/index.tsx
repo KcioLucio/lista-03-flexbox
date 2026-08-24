@@ -3,14 +3,12 @@ export default function HomeScreen() {
   return (
 
     <View style={styles.container}>
-
      
       <View style={styles.loginTopo}> 
         <Image
           source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpfepoWeeSqlCipbauav_SkItuIk-fW0yBfqAtV51hAw&s=10"}}style={styles.logoTopo}
         />     
       </View>   
-
       
       <View style={styles.loginConteudo}>
         <View style={styles.linhaEmail}>
@@ -23,7 +21,6 @@ export default function HomeScreen() {
           />
         </View>
 
-
         <View style={styles.linhaSenha}>
           <Text style={styles.textoConteudo}>
             Senha:
@@ -34,24 +31,19 @@ export default function HomeScreen() {
             secureTextEntry={true}
           />
         </View>
-
-
-        <View style={styles.linhaEsqueciSenha}>
+        
           <Pressable onPress={() => console.log("Esqueceu a Senha")} style={styles.linhaEsqueciSenha}>
             <Text style={styles.textoEsqueciSenha}>
               Esqueci a senha
             </Text>
           </Pressable>
-        </View>
-
-        
+               
           <Pressable onPress={() => console.log("Entrar")} style={styles.botao}>
             <Text style={styles.textoBotao}>
               Entrar
             </Text>
           </Pressable>        
       </View>
-
 
       <View style={styles.loginFooter}>
         <Text style={styles.textoFooter}>
