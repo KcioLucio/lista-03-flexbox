@@ -20,7 +20,9 @@ const MAPPING = {
   'chevron.right': 'chevron-right',
   'alarm.fill': 'alarm',
   'speaker.slash.fill': 'speaker',
-  'apple.meditate.circle.fill': 'apple',    
+  'apple.meditate.circle.fill': 'apple', 
+  'chart.bar.fill': 'insert-chart',
+     
   
   
 } as IconMapping;
