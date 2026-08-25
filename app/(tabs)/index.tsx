@@ -6,7 +6,7 @@ export default function HomeScreen() {
      
       <View style={styles.loginTopo}> 
         <Image
-          source={{uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpfepoWeeSqlCipbauav_SkItuIk-fW0yBfqAtV51hAw&s=10"}}style={styles.logoTopo}
+          source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpfepoWeeSqlCipbauav_SkItuIk-fW0yBfqAtV51hAw&s=10'}}style={styles.logoTopo}
         />     
       </View>   
       
@@ -17,7 +17,7 @@ export default function HomeScreen() {
           </Text>
           <TextInput
             style={styles.input}
-            placeholder="Digite seu e-mail"
+            placeholder='Digite seu e-mail'
           />
         </View>
 
@@ -27,18 +27,18 @@ export default function HomeScreen() {
           </Text>
           <TextInput
             style={styles.input}
-            placeholder="Digite sua senha"
+            placeholder='Digite sua senha'
             secureTextEntry={true}
           />
         </View>
         
-          <Pressable onPress={() => console.log("Esqueceu a Senha")} style={styles.linhaEsqueciSenha}>
+          <Pressable onPress={() => console.log('Esqueceu a Senha')} style={styles.linhaEsqueciSenha}>
             <Text style={styles.textoEsqueciSenha}>
               Esqueci a senha
             </Text>
           </Pressable>
                
-          <Pressable onPress={() => console.log("Entrar")} style={styles.botao}>
+          <Pressable onPress={() => console.log('Entrar')} style={styles.botao}>
             <Text style={styles.textoBotao}>
               Entrar
             </Text>
@@ -49,7 +49,7 @@ export default function HomeScreen() {
         <Text style={styles.textoFooter}>
           É novo por aqui?
         </Text>
-        <Pressable onPress={() => console.log("Cadastrar")}>
+        <Pressable onPress={() => console.log('Cadastrar')}>
           <Text style={styles.textoFooterCad}>
             Cadastre-se!
           </Text>
@@ -64,13 +64,13 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
-    backgroundColor: "rgb(255, 255, 255)",    
+    backgroundColor: '#f2f2f2',    
   },
 
   loginTopo: {
     flex: 0.9,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
     paddingTop: 30,
     
   },
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
 
   loginConteudo: {
     flex: 4,
-    justifyContent: "center",
+    justifyContent: 'center',
     padding: 30,
   },
 
@@ -106,57 +106,57 @@ const styles = StyleSheet.create({
 
   input: {
     height: 45,
-    backgroundColor: "white",
+    backgroundColor: 'white',
     borderWidth: 1,
-    borderColor: "#777",
+    borderColor: '#777',
     borderRadius: 5,
     paddingLeft: 10,
   },
 
   linhaEsqueciSenha: {
-    alignItems: "flex-end",
+    alignItems: 'flex-end',
     marginTop: 5,
     marginBottom: 20,
   },
 
   textoEsqueciSenha: {
-    color: "#0066cc",
-    textDecorationLine: "underline",
+    color: '#0066cc',
+    textDecorationLine: 'underline',
   },
 
   botao: {
     height: 45,
-    backgroundColor: "black",
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: 'black',
+    justifyContent: 'center',
+    alignItems: 'center',
     borderRadius: 8,
     boxShadow: '3px 4px 4px rgb(0,0,0, 0.5)' ,
   },
 
   textoBotao: {
-    color: "white",
+    color: 'white',
     fontSize: 16,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
 
   loginFooter: {
     flex: 0.2,
     flexDirection:'row',
-    backgroundColor: "black",
+    backgroundColor: 'black',
     justifyContent:'center',
     alignItems:'center',
     gap:10,
   },
 
   textoFooter: {
-    color: "white",
-    textAlign: "center",
+    color: 'white',
+    textAlign: 'center',
     
   },
 
   textoFooterCad:{
-    color: "#0066cc",
-    textAlign: "center",
+    color: '#0066cc',
+    textAlign: 'center',
     textDecorationLine:'underline'
   }
 
